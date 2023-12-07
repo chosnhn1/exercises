@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="counter-head">
+        <p class="counter-title">Counter</p>
+        <p class="counter-value">0</p>
+    </div>
+    <div class="counter-buttons">
+        <button class="button-reset">Reset</button>
+        <button class="button-add">Add</button>
+    </div>
+</body>
+<script>
+    let counterValue = document.querySelector(".counter-value");
+    let resetButton = document.querySelector(".button-reset");
+    let addButton = document.querySelector(".button-add");
+    
+    addButton.addEventListener("click", function () {
+        let result = Number(counterValue.innerHTML) + 1;
+        counterValue.innerHTML = result;
+    })
+    resetButton.addEventListener("click", function () {
+        counterValue.innerHTML = Number(0);
+    })
+</script>
+</html>
