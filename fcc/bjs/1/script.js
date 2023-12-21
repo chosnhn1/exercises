@@ -24,4 +24,4 @@ const monsterHealthText = document.querySelector("#monsterHealth");
 
 // initialize buttons
 
-let goStore = button1.onclick
+// let goStore = button1.onclick
